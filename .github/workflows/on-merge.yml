@@ -160,7 +160,7 @@ jobs:
           echo "Build has been triggered."
 
       - name: Clean up submission directory
-        if: steps.detect.outputs.skip != 'true'
+        if: always() && steps.detect.outputs.skip != 'true' && steps.detect.outputs.app_dir != ''
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
