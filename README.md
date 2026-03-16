@@ -1,5 +1,6 @@
 # FriendlyHub App Submissions
 
+Test
 Submit your Flatpak app to [FriendlyHub](https://friendlyhub.org) by opening a pull request.
 
 ## How to submit
